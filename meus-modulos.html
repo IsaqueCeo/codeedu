@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CodeEdu — módulos do aluno.">
+  <title>CodeEdu — Meus módulos</title>
+  <link rel="stylesheet" href="meus-modulos.css">
+  <link rel="stylesheet" href="readability.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.8 12 3l9 7.8"/><path d="M5.5 9.5V21h13V9.5"/><path d="M9.5 21v-6h5v6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 5V3h6v2M9 10h6M9 14h6"/></symbol>
+    <symbol id="i-test" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 2.8 7.2 7 9 4.2-1.8 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-5M10 20V9M15 20v-8M20 20V4"/><path d="m4 11 5-4 5 2 6-6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 21c.7-4.2 3-6.2 7-6.2S18.3 16.8 19 21"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H5v16h5M14 8l4 4-4 4M8 12h10"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17h12l-1.5-2.2V10a4.5 4.5 0 0 0-9 0v4.8L6 17Z"/><path d="M10 20h4"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-cog" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21h-4v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H3v-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3.1V3h4v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.1v4H21a1.7 1.7 0 0 0-1.6 1Z"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 5a3 3 0 0 0-5 2c0 1 .4 1.8 1.1 2.4A3.5 3.5 0 0 0 6 16v1a3 3 0 0 0 5 2V5a3 3 0 0 0-2-3Z"/><path d="M15 5a3 3 0 0 1 5 2c0 1-.4 1.8-1.1 2.4A3.5 3.5 0 0 1 18 16v1a3 3 0 0 1-5 2V5a3 3 0 0 1 2-3ZM8 9h3M13 12h3M8 15h3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v17H7.5A3.5 3.5 0 0 0 4 22V5.5Z"/><path d="M20 5.5A3.5 3.5 0 0 0 16.5 2H13v17h3.5A3.5 3.5 0 0 1 20 22V5.5Z"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="side-brand" href="dashboard.html" aria-label="CodeEdu — Início">
+        <img src="assets/login-logo.png" alt="CodeEdu — Computação para um futuro melhor">
+      </a>
+      <nav class="side-nav" aria-label="Navegação principal">
+        <a class="nav-item" href="dashboard.html"><svg><use href="#i-home"/></svg><b>Início</b></a>
+        <a class="nav-item active" href="meus-modulos.html" aria-current="page"><svg><use href="#i-grid"/></svg><b>Meus módulos</b></a>
+        <button class="nav-item nav-button" type="button" data-demo-action="atividades"><svg><use href="#i-clipboard"/></svg><b>Atividades</b></button>
+        <button class="nav-item nav-button" type="button" data-demo-action="testes"><svg><use href="#i-test"/></svg><b>Testes</b></button>
+        <button class="nav-item nav-button" type="button" data-demo-action="progresso"><svg><use href="#i-chart"/></svg><b>Meu progresso</b></button>
+        <div class="nav-divider"></div>
+        <button class="nav-item nav-button" type="button" data-demo-action="perfil"><svg><use href="#i-user"/></svg><b>Perfil</b></button>
+        <button class="nav-item nav-button" id="logoutButton" type="button"><svg><use href="#i-logout"/></svg><b>Sair</b></button>
+      </nav>
+    </aside>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="hamburger" id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+        <a class="tablet-brand" href="dashboard.html" aria-label="CodeEdu — Início"><img src="assets/login-logo.png" alt="CodeEdu"></a>
+
+        <label class="global-search">
+          <svg><use href="#i-search"/></svg>
+          <input id="moduleSearch" type="search" placeholder="Buscar módulos, aulas ou conteúdos..." aria-label="Buscar módulos, aulas ou conteúdos">
+        </label>
+
+        <div class="top-actions">
+          <div class="popover-anchor">
+            <button class="icon-button bell" id="notificationButton" type="button" aria-label="Notificações" aria-expanded="false"><svg><use href="#i-bell"/></svg><i>2</i></button>
+            <div class="popover notification-popover" id="notificationPopover" hidden>
+              <strong>Notificações</strong>
+              <p>Você tem 1 atividade pendente no módulo Pensamento Computacional.</p>
+              <p>Há uma avaliação disponível em Introdução à Programação.</p>
+            </div>
+          </div>
+          <div class="popover-anchor user-anchor">
+            <button class="profile-trigger" id="profileButton" type="button" aria-expanded="false">
+              <span class="avatar">JA</span><span class="user-name" id="topUserName">João Alves</span><span class="chevron">⌄</span>
+            </button>
+            <div class="popover profile-popover" id="profilePopover" hidden>
+              <strong id="popoverName">João Alves</strong>
+              <small id="popoverSchool">Escola Municipal João XXIII</small>
+              <button type="button" id="popoverLogout"><svg><use href="#i-logout"/></svg> Sair</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="modules-page">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+          <a href="dashboard.html"><svg><use href="#i-home"/></svg><span>Início</span></a>
+          <span class="crumb-separator">›</span>
+          <span aria-current="page">Meus módulos</span>
+        </nav>
+
+        <section class="modules-hero">
+          <div class="hero-copy">
+            <h1>Meus módulos</h1>
+            <p>Explore os módulos, acompanhe seu progresso e continue sua jornada na computação.</p>
+          </div>
+          <div class="hero-art"><img src="assets/modules-hero.png" alt="Estudante aprendendo programação no notebook"></div>
+        </section>
+
+        <section class="modules-grid" id="modulesGrid" aria-label="Módulos disponíveis">
+          <button class="course-card" type="button" data-module="Introdução à Computação" data-search="introdução computação conceitos básicos história áreas atuação cotidiano concluído 12 aulas">
+            <div class="course-head">
+              <span class="course-icon monitor"><svg><use href="#i-monitor"/></svg></span>
+              <h2>Introdução à Computação</h2>
+              <span class="status status-done">✓&nbsp; Concluído</span>
+              <svg class="mobile-arrow"><use href="#i-chevron"/></svg>
+            </div>
+            <p>Entenda os conceitos básicos da computação, sua história, áreas de atuação e como ela está presente no nosso dia a dia.</p>
+            <div class="progress-row"><div class="progress"><i style="width:100%"></i></div><b>100%</b></div>
+            <div class="course-meta">
+              <span><svg><use href="#i-book"/></svg>12 aulas</span>
+              <span><svg><use href="#i-clock"/></svg>Concluído em 10/09/2025</span>
+            </div>
+          </button>
+
+          <button class="course-card" type="button" data-module="Hardware e Software" data-search="hardware software computador componentes tipos de software andamento 10 aulas 6 aulas restantes">
+            <div class="course-head">
+              <span class="course-icon cog"><svg><use href="#i-cog"/></svg></span>
+              <h2>Hardware e Software</h2>
+              <span class="status status-progress">◉&nbsp; Em andamento</span>
+              <svg class="mobile-arrow"><use href="#i-chevron"/></svg>
+            </div>
+            <p>Conheça os componentes de um computador, os principais tipos de software e como eles trabalham juntos.</p>
+            <div class="progress-row"><div class="progress blue-progress"><i style="width:58%"></i></div><b>58%</b></div>
+            <div class="course-meta">
+              <span><svg><use href="#i-book"/></svg>10 aulas</span>
+              <span><svg><use href="#i-clock"/></svg>6 aulas restantes</span>
+            </div>
+          </button>
+
+          <button class="course-card" type="button" data-module="Pensamento Computacional" data-search="pensamento computacional resolver problemas lógica soluções eficientes atividade pendente 14 aulas 8 restantes">
+            <div class="course-head">
+              <span class="course-icon brain"><svg><use href="#i-brain"/></svg></span>
+              <h2>Pensamento Computacional</h2>
+              <span class="status status-pending">◉&nbsp; Atividade pendente</span>
+              <svg class="mobile-arrow"><use href="#i-chevron"/></svg>
+            </div>
+            <p>Desenvolva sua capacidade de resolver problemas, pensar de forma lógica e criar soluções eficientes.</p>
+            <div class="progress-row"><div class="progress blue-progress"><i style="width:42%"></i></div><b>42%</b></div>
+            <div class="course-meta">
+              <span><svg><use href="#i-book"/></svg>14 aulas</span>
+              <span><svg><use href="#i-clock"/></svg>8 aulas restantes</span>
+            </div>
+          </button>
+
+          <button class="course-card" type="button" data-module="Introdução à Programação" data-search="introdução programação fundamentos linguagens primeiros programas avaliação teste 16 aulas">
+            <div class="course-head">
+              <span class="course-icon code"><svg><use href="#i-code"/></svg></span>
+              <h2>Introdução à Programação</h2>
+              <span class="status status-test">◉&nbsp; Avaliação / Teste</span>
+              <svg class="mobile-arrow"><use href="#i-chevron"/></svg>
+            </div>
+            <p>Aprenda os fundamentos da programação, conheça as linguagens e crie seus primeiros programas.</p>
+            <div class="progress-row"><div class="progress empty-progress"><i style="width:0%"></i></div><b>0%</b></div>
+            <div class="course-meta">
+              <span><svg><use href="#i-book"/></svg>16 aulas</span>
+              <span><svg><use href="#i-clock"/></svg>1 avaliação pendente</span>
+            </div>
+          </button>
+        </section>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <strong>Nenhum módulo encontrado.</strong>
+          <p>Tente buscar por outro termo, conteúdo ou aula.</p>
+        </div>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    </main>
+
+    <nav class="mobile-nav" aria-label="Navegação mobile">
+      <a href="dashboard.html"><svg><use href="#i-home"/></svg><b>Início</b></a>
+      <a class="active" href="meus-modulos.html" aria-current="page"><svg><use href="#i-grid"/></svg><b>Módulos</b></a>
+      <button type="button" data-demo-action="atividades"><svg><use href="#i-clipboard"/></svg><b>Atividades</b></button>
+      <button type="button" data-demo-action="testes"><svg><use href="#i-test"/></svg><b>Testes</b></button>
+      <button type="button" data-demo-action="perfil"><svg><use href="#i-user"/></svg><b>Perfil</b></button>
+    </nav>
+  </div>
+
+  <script src="meus-modulos.js"></script>
+</body>
+</html>

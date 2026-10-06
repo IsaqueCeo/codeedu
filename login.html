@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CodeEdu — acesso à plataforma educacional.">
+  <title>CodeEdu — Entrar</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="readability.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="visual-panel" aria-label="Apresentação da CodeEdu">
+      <div class="visual-content">
+        <a class="brand" href="index.html" aria-label="Voltar para a CodeEdu">
+          <img src="assets/login-logo.png" alt="CodeEdu — Computação para um futuro melhor">
+        </a>
+
+        <div class="selected-school desktop-school" id="desktopSchoolCard">
+          <div class="school-building"><img src="assets/school-blue.svg" alt=""></div>
+          <div class="selected-school-info">
+            <span>Escola selecionada</span>
+            <strong id="desktopSchoolName">Escola Municipal João XXIII</strong>
+            <small><span id="desktopSchoolCity">Teresina – PI</span> &nbsp; | &nbsp; Unidade: <span id="desktopSchoolUnit">Centro</span></small>
+          </div>
+        </div>
+
+        <div class="login-illustration">
+          <img src="assets/login-illustration.png" alt="Estudante estudando programação em um notebook">
+        </div>
+
+        <p class="motivational">
+          Grandes conquistas<br>
+          começam com um bom estudo!
+        </p>
+
+      </div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="welcome-title">
+      <header class="mobile-header">
+        <a class="brand" href="index.html" aria-label="Voltar para a CodeEdu">
+          <img src="assets/login-logo.png" alt="CodeEdu — Computação para um futuro melhor">
+        </a>
+        <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <div class="form-content">
+        <a class="selected-school mobile-school" id="mobileSchoolCard" href="selecao-escola.html" aria-label="Trocar escola selecionada">
+          <div class="school-building"><img src="assets/school-blue.svg" alt=""></div>
+          <div class="selected-school-info">
+            <span>Escola selecionada</span>
+            <strong id="mobileSchoolName">Escola Municipal João XXIII</strong>
+            <small><span id="mobileSchoolCity">Teresina – PI</span> &nbsp; | &nbsp; Unidade: <span id="mobileSchoolUnit">Centro</span></small>
+          </div>
+          <span class="school-chevron">›</span>
+        </a>
+
+        <div class="welcome">
+          <h1 id="welcome-title">Bem-vindo!</h1>
+          <p>Entre na plataforma para continuar seus estudos.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="matricula">Matrícula</label>
+            <div class="input-wrap">
+              <span class="field-icon user-icon" aria-hidden="true"><img src="assets/user-blue.svg" alt=""></span>
+              <input id="matricula" name="matricula" type="text" autocomplete="username"
+                     placeholder="Digite sua matrícula">
+            </div>
+            <span class="field-error" id="matriculaError"></span>
+          </div>
+
+          <div class="field password-field">
+            <label for="senha">Senha</label>
+            <div class="input-wrap">
+              <span class="field-icon lock-icon" aria-hidden="true"><img src="assets/lock-blue.svg" alt=""></span>
+              <input id="senha" name="senha" type="password" autocomplete="current-password"
+                     placeholder="Digite sua senha">
+              <button id="togglePassword" class="password-toggle" type="button"
+                      aria-label="Mostrar senha" aria-pressed="false"><img src="assets/eye-off-blue.svg" alt=""></button>
+            </div>
+            <span class="field-error" id="senhaError"></span>
+          </div>
+
+          <div class="forgot-row">
+            <a href="#" id="forgotPassword">Esqueci minha senha</a>
+          </div>
+
+          <button class="login-button" type="submit">
+            <span>Entrar</span>
+            <span class="login-arrow">→</span>
+          </button>
+
+          
+          <div class="demo-access">
+            <strong>Acesso para demonstração</strong>
+            <span>Matrícula <b>20260001</b></span>
+            <span>Senha <b>123456</b></span>
+            <button id="fillDemo" type="button">Usar acesso de exemplo</button>
+          </div>
+
+          <div class="info-box">
+            <span class="info-icon">i</span>
+            <p>Use sua matrícula e senha para acessar<br class="desktop-only"> todos os recursos da plataforma.</p>
+          </div>
+
+          <p class="login-status" id="loginStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="login-page-footer">CodeEdu <span>•</span> Aprenda. Pratique. Evolua.</footer>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
